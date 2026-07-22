@@ -18,7 +18,7 @@ function Footer() {
             <Link to="/" className="flex items-center gap-3 group mb-4">
               <Zap className="w-6 h-6 text-primary" />
               <span className="text-xl font-bold font-mono text-foreground">
-                JAYANT<span className="text-primary">.EDITZ</span>
+                JAYANT SAINI<span className="text-primary">|Video Editer</span>
               </span>
             </Link>
             <p className="text-sm text-muted-foreground text-center md:text-left max-w-xs">
