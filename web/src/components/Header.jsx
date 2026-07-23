@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Zap } from 'lucide-react';
+import profile from '../assets/me 2.png';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,11 +39,15 @@ function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-card border border-primary flex items-center justify-center transition-all duration-300 group-hover:neon-border-cyan group-hover:scale-110">
-              <Zap className="w-6 h-6 text-primary" />
-            </div>
+            <div className="w-10 h-10 rounded-xl overflow-hidden border border-primary transition-all duration-300 group-hover:neon-border-cyan group-hover:scale-110">
+  <img
+    src={profile}
+    alt="Jayant Saini"
+    className="w-full h-full object-cover"
+  />
+</div>
             <span className="text-xl font-bold font-mono tracking-tighter text-foreground group-hover:neon-text-cyan transition-all duration-300">
-              JAYANT<span className="text-primary">.EDITZ</span>
+              Jayant Saini<span className="text-primary">|Video Editer</span>
             </span>
           </Link>
 
