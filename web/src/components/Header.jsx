@@ -39,7 +39,7 @@ function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-14 h-14 rounded-xl overflow-hidden border border-primary transition-all duration-300 group-hover:neon-border-cyan group-hover:scale-110">
+            <div className="w-16 h-16 rounded-xl overflow-hidden border border-primary transition-all duration-300 group-hover:neon-border-cyan group-hover:scale-110">
   <img
     src={profile}
     alt="Jayant Saini"
