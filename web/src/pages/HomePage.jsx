@@ -46,9 +46,9 @@ function HomePage() {
               <h1
                 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-[1.1] tracking-tighter"
               >
-                Make your videos <br className="hidden md:block" />
+                I Turn Raw Footage <br className="hidden md:block" />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary neon-text-cyan">
-                  impossible to skip.
+                  Into Viral Content.
                 </span>
               </h1>
 
@@ -66,7 +66,7 @@ function HomePage() {
                 <Button asChild variant="outline" size="lg" className="h-14 px-8 border-secondary/50 text-secondary hover:bg-secondary/10 hover:neon-border-magenta text-lg font-bold transition-all">
                   <Link to="/contact">
                     <Zap className="w-5 h-5 mr-2" />
-                    Hit me up
+                  Contact Me
                   </Link>
                 </Button>
               </div>

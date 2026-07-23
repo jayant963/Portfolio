@@ -47,7 +47,7 @@ function Header() {
   />
 </div>
             <span className="text-xl font-bold font-mono tracking-tighter text-foreground group-hover:neon-text-cyan transition-all duration-300">
-              Jayant Saini<span className="text-primary">|Video Editer</span>
+              Jayant Saini<span className="text-primary">|Video Editor</span>
             </span>
           </Link>
 
