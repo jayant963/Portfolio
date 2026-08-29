@@ -44,7 +44,7 @@ function ContactPage() {
   return (
     <>
       <Helmet>
-        <title>Hit Me Up | Jayant Saini</title>
+        <title>Contact Me Up | Jayant Saini</title>
         <meta
           name="description"
           content="Contact Jayant Saini for video editing. DM on Instagram, WhatsApp, or Email."
@@ -57,7 +57,7 @@ function ContactPage() {
         
         <Header />
 
-        <section className="pt-40 pb-20 relative z-10">
+        <section className="pt-24 pb-8 relative z-10">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -65,9 +65,48 @@ function ContactPage() {
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter">
-                Let's make a <span className="text-secondary neon-text-magenta">banger.</span>
-              </h1>
+              <h1 className="mb-6 text-center">
+
+  <span
+    className="
+      text-5xl md:text-7xl
+      font-extralight
+      tracking-[-0.05em]
+      text-slate-200
+    "
+    style={{
+      fontFamily: "Inter, sans-serif",
+      textShadow: "0 0 30px rgba(255,255,255,0.08)"
+    }}
+  >
+    Let's Make A
+  </span>
+
+  <span
+    className="
+      ml-3
+      text-5xl md:text-7xl
+      font-black
+      tracking-[-0.08em]
+      bg-gradient-to-r
+      from-cyan-200
+      via-blue-300
+      to-cyan-400
+      bg-clip-text
+      text-transparent
+    "
+    style={{
+      fontFamily: "Outfit, sans-serif",
+      textShadow: `
+        0 0 20px rgba(59,130,246,0.25),
+        0 0 40px rgba(34,211,238,0.2)
+      `
+    }}
+  >
+    Banger.
+  </span>
+
+</h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 DM me on my Instagram <span className="text-foreground font-bold">(@_developer_jayant_9)</span> or you can email me or you can message me on WhatsApp or last option you can directly call me if you are in hurry.
               </p>

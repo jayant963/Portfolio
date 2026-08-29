@@ -3,7 +3,7 @@ import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { Toaster } from '@/components/ui/sonner';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import HomePage from './pages/HomePage.jsx';
-import PortfolioPage from './pages/PortfolioPage.jsx';
+import PortfolioPage from './pages/ProjectsPage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import ServicesPage from './pages/ServicesPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';

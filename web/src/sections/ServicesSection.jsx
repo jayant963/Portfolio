@@ -1,24 +1,21 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
-import { WandSparkles, PlaySquare, Smartphone, FileAudio as AudioWaveform } from 'lucide-react';
-import Header from '@/components/Header.jsx';
-import Footer from '@/components/Footer.jsx';
+import {WandSparkles, Film, Palette, PlaySquare, Smartphone, AudioWaveform } from 'lucide-react';
 import ServiceCard from '@/components/ServiceCard.jsx';
 
-function ServicesPage() {
+function ServicesSection() {
   const services = [
     {
-      icon: WandSparkles,
-      title: 'Motion Graphics',
-      description: 'Dynamic animations and visual effects designed to make your content impossible to ignore.',
-    },
+          icon: WandSparkles,
+          title: 'Motion Graphics',
+          description: 'Dynamic animations and visual effects designed to make your content impossible to ignore.',
+        },
     {
           icon: Film,
           title: 'Documentry',
           description: 'Cinematic, story-driven editing that transforms raw footage into compelling documentaries built to inform, engage, and keep viewers watching.',
         },
-        {
+         {
           icon: Palette,
           title: 'Color Grading and Audio Mix',
           description: 'Polished visuals and immersive sound, expertly balanced to give your content a cinematic, professional finish.',
@@ -41,21 +38,8 @@ function ServicesPage() {
   ];
 
   return (
-    <>
-      <Helmet>
-        <title>Services | Jayant Saini</title>
-        <meta
-          name="description"
-          content="Video editing services for YouTubers: Long-form, Shorts, and Stream Highlights."
-        />
-      </Helmet>
-
-      <div className="min-h-screen bg-background relative overflow-hidden">
-        <div className="absolute top-1/4 left-0 w-96 h-96 bg-accent/10 blur-[150px] pointer-events-none" />
-
-        <Header />
-
-        <section className="pt-40 pb-20 relative z-10">
+    <section id="services">
+<section className="pt-40 pb-20 relative z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -132,25 +116,147 @@ function ServicesPage() {
               transition={{ duration: 0.6 }}
               className="mt-24 bg-card border border-primary/30 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden group hover:neon-border-cyan transition-all duration-500"
             >
-              <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <h2 className="text-3xl font-bold mb-4 relative z-10">Need a test edit?</h2>
-              <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto relative z-10">
-                Not sure if my style fits your channel? Let's do a short test edit to see if we vibe.
-              </p>
-              <a
-                href="/contact"
-                className="relative z-10 inline-flex items-center justify-center rounded-xl bg-primary text-primary-foreground px-8 py-4 font-bold text-lg hover:bg-primary/90 shadow-[0_0_20px_rgba(0,255,255,0.4)] transition-all active:scale-95"
-              >
-                Let's talk
-              </a>
+              <div
+  className="
+    absolute inset-0
+    bg-gradient-to-r
+    from-cyan-500/5
+    via-blue-500/10
+    to-cyan-500/5
+    opacity-0
+    group-hover:opacity-100
+    transition-opacity
+    duration-700
+  "
+/>
+
+<div className="relative z-10">
+
+  <div
+    className="
+      inline-flex
+      items-center
+      px-4 py-2
+      mb-6
+      rounded-full
+      border border-cyan-400/20
+      bg-cyan-500/5
+      backdrop-blur-xl
+    "
+  >
+    <span
+      className="
+        text-[11px]
+        uppercase
+        tracking-[0.35em]
+        text-cyan-300
+        font-semibold
+      "
+    >
+      FREE SAMPLE EDIT
+    </span>
+  </div>
+
+  <h2
+    className="
+      text-4xl md:text-5xl
+      font-black
+      tracking-[-0.06em]
+      mb-5
+    "
+  >
+    <span className="text-slate-100">
+      Experience The
+    </span>
+
+    <span
+      className="
+        ml-3
+        bg-gradient-to-r
+        from-cyan-200
+        via-blue-300
+        to-cyan-400
+        bg-clip-text
+        text-transparent
+      "
+      style={{
+        textShadow:
+          "0 0 25px rgba(34,211,238,0.25)"
+      }}
+    >
+      Difference.
+    </span>
+  </h2>
+
+  <p
+    className="
+      text-slate-400
+      text-lg
+      leading-relaxed
+      max-w-2xl
+      mx-auto
+    "
+  >
+    Not sure if we're the right fit? Start with a
+    <span className="text-cyan-300 font-semibold">
+      {" "}sample edit{" "}
+    </span>
+    and see how your raw footage can be transformed into
+    high-retention content designed to keep viewers engaged.
+  </p>
+
+</div>
+              <button
+  onClick={() => {
+    document
+      .getElementById("contact")
+      ?.scrollIntoView({ behavior: "smooth" });
+  }}
+  className="
+    relative
+    z-10
+    mt-8
+    overflow-hidden
+    inline-flex
+    items-center
+    justify-center
+    px-8
+    py-4
+    rounded-2xl
+    border
+    border-cyan-400/20
+    bg-cyan-500/5
+    backdrop-blur-xl
+    text-cyan-300
+    font-semibold
+    tracking-wider
+    transition-all
+    duration-500
+    hover:border-cyan-300/40
+    hover:shadow-[0_0_40px_rgba(34,211,238,0.25)]
+  "
+>
+
+  <div
+    className="absolute -left-40 top-0 h-full w-24 opacity-70"
+    style={{
+      background:
+        "linear-gradient(90deg, transparent, rgba(255,255,255,0.15), rgba(34,211,238,0.9), rgba(255,255,255,0.15), transparent)",
+      filter: "blur(10px)",
+      animation: "lightSweep 3s linear infinite"
+    }}
+  />
+
+  <span className="relative z-10">
+    Get A Free Sample Edit
+  </span>
+
+</button>
             </motion.div>
           </div>
         </section>
-
-        <Footer />
-      </div>
-    </>
+    </section>
   );
 }
 
-export default ServicesPage;
+export default ServicesSection;
