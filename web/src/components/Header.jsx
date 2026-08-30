@@ -47,10 +47,10 @@ function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex items-center justify-start h-20">
-       <a
+<div className="flex items-center justify-between h-20">     
+    <a
   href="#about"
-  className="flex items-center group -ml-10 cursor-pointer"
+  className="flex items-center group ml-0 sm:-ml-10 cursor-pointer"
   onClick={(e) => {
     e.preventDefault();
     document

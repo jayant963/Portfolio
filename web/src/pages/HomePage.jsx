@@ -98,14 +98,15 @@ function HomePage() {
   Raw Footage
 </span>
 <div className="relative block w-fit max-w-full px-4 sm:px-8 py-3">
-  <div
+ <div
   className="absolute inset-0 bg-[#08172d]"
   style={{
-    boxShadow: "0 0 50px rgba(34,211,238,0.15)"
+    boxShadow: "0 0 50px rgba(34,211,238,0.15)",
+    animation: "glowPulse 5s ease-in-out infinite"
   }}
 ></div>
 
-  <div
+ <div
   className="absolute inset-0 border border-cyan-300/50"
   style={{
     boxShadow: `
@@ -113,7 +114,8 @@ function HomePage() {
       0 0 30px rgba(34,211,238,0.4),
       0 0 60px rgba(34,211,238,0.2),
       inset 0 0 20px rgba(34,211,238,0.15)
-    `
+    `,
+    animation: "glowPulse 5s ease-in-out infinite"
   }}
 ></div>
 
@@ -156,7 +158,7 @@ function HomePage() {
       <div
   className="absolute inset-0 bg-cyan-400/15 blur-3xl"
   style={{
-    animation: "glowPulse 4s ease-in-out infinite"
+    animation: "glowPulse 5s ease-in-out infinite"
   }}
 ></div>
 
