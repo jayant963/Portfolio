@@ -97,8 +97,8 @@ function HomePage() {
 >
   Raw Footage
 </span>
-<div className="relative inline-block px-8 py-3">
-<div
+<div className="relative block w-fit max-w-full px-4 sm:px-8 py-3">
+  <div
   className="absolute inset-0 bg-[#08172d]"
   style={{
     boxShadow: "0 0 50px rgba(34,211,238,0.15)"
@@ -129,18 +129,19 @@ function HomePage() {
 
   <span
     className="
-      relative z-10
-      text-5xl md:text-6xl lg:text-7xl
-      font-black
-      uppercase
-      tracking-[-0.08em]
-      bg-gradient-to-r
-      from-cyan-200
-      via-blue-300
-      to-cyan-400
-      bg-clip-text
-      text-transparent
-    "
+  relative z-10
+  block
+  text-4xl sm:text-5xl md:text-6xl lg:text-7xl
+  font-black
+  uppercase
+  tracking-[-0.08em]
+  bg-gradient-to-r
+  from-cyan-200
+  via-blue-300
+  to-cyan-400
+  bg-clip-text
+  text-transparent
+"
     style={{
       fontFamily: "Outfit, sans-serif",
       textShadow: "0 0 40px rgba(34,211,238,0.5)"
@@ -151,8 +152,8 @@ function HomePage() {
   </span>
 
 </div>
-  <div className="relative inline-block px-8 py-3 overflow-hidden">
-    <div
+<div className="relative block w-fit max-w-full px-4 sm:px-8 py-3 overflow-hidden">
+      <div
   className="absolute inset-0 bg-cyan-400/15 blur-3xl"
   style={{
     animation: "glowPulse 4s ease-in-out infinite"
@@ -174,19 +175,20 @@ className="absolute left-0 top-0 h-full w-32"
   />
 
   <span
-    className="
-      relative z-10
-      text-5xl md:text-6xl lg:text-7xl
-      font-black
-      uppercase
-      tracking-[-0.08em]
-      bg-gradient-to-r
-      from-cyan-200
-      via-blue-300
-      to-cyan-400
-      bg-clip-text
-      text-transparent
-    "
+   className="
+  relative z-10
+  block
+  text-4xl sm:text-5xl md:text-6xl lg:text-7xl
+  font-black
+  uppercase
+  tracking-[-0.08em]
+  bg-gradient-to-r
+  from-cyan-200
+  via-blue-300
+  to-cyan-400
+  bg-clip-text
+  text-transparent
+"
     style={{
       fontFamily: "Outfit, sans-serif",
       textShadow: "0 0 40px rgba(34,211,238,0.5)"
@@ -298,7 +300,7 @@ className="absolute left-0 top-0 h-full w-32"
   </Button>
 
 </div>
-              <div className="grid grid-cols-3 gap-6 mt-10 max-w-xl">
+             <div className="grid grid-cols-3 gap-3 sm:gap-6 mt-10 w-full max-w-xl">
   {stats.map((stat, index) => {
     const Icon = stat.icon;
 
@@ -306,51 +308,60 @@ className="absolute left-0 top-0 h-full w-32"
       <div
         key={index}
         className="
-group
-relative
-z-50
-overflow-hidden
-p-6
-rounded-2xl
-bg-card/80
-backdrop-blur-xl
-border border-cyan-500/10
-transition-all duration-500
-hover:-translate-y-2
-hover:border-cyan-400/40
-hover:shadow-[0_0_15px_rgba(34,211,238,0.15)]
-"
+          group
+          relative
+          z-50
+          min-w-0
+          p-3 sm:p-6
+          rounded-2xl
+          bg-card/80
+          backdrop-blur-xl
+          border border-cyan-500/10
+          transition-all duration-500
+          hover:-translate-y-2
+          hover:border-cyan-400/40
+          hover:shadow-[0_0_15px_rgba(34,211,238,0.15)]
+        "
       >
-        
         <Icon
-  className="
-    w-7 h-7
-    text-cyan-300
-    mb-4
-    transition-all
-    duration-500
-    group-hover:scale-125
-    group-hover:drop-shadow-[0_0_12px_rgba(34,211,238,0.8)]
-  "
-/>
+          className="
+            w-6 h-6 sm:w-7 sm:h-7
+            text-cyan-300
+            mb-3 sm:mb-4
+            transition-all
+            duration-500
+            group-hover:scale-125
+            group-hover:drop-shadow-[0_0_12px_rgba(34,211,238,0.8)]
+          "
+        />
 
         <div
-  className="
-    text-4xl
-    font-black
-    tracking-tight
-    bg-gradient-to-r
-    from-white
-    via-blue-200
-    to-cyan-300
-    bg-clip-text
-    text-transparent
-  "
->
+          className="
+            text-2xl sm:text-4xl
+            font-black
+            tracking-tight
+            whitespace-nowrap
+            bg-gradient-to-r
+            from-white
+            via-blue-200
+            to-cyan-300
+            bg-clip-text
+            text-transparent
+          "
+        >
           {stat.value}
         </div>
 
-        <div className="text-xs uppercase tracking-widest text-muted-foreground">
+        <div
+          className="
+            mt-1
+            text-[9px] sm:text-xs
+            uppercase
+            tracking-[0.08em] sm:tracking-widest
+            leading-4 sm:leading-5
+            text-muted-foreground
+          "
+        >
           {stat.label}
         </div>
       </div>
